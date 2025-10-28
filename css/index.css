@@ -88,6 +88,7 @@ body {
   line-height: 120%;
   top: 10%;
   left: 6%;
+  font-weight: bold;
 }
 .bam-paper-2025-wrap .paper-kv article {
   position: absolute;
@@ -111,6 +112,7 @@ body {
 .bam-paper-2025-wrap .paper-kv article > div h2 {
   font-size: 2vw;
   font-style: italic;
+  font-weight: bold;
 }
 .bam-paper-2025-wrap .paper-kv article > div p {
   flex: 1 0 0;
