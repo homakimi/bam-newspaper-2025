@@ -4,61 +4,459 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=10.0, user-scalable=1"/>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous" nonce="rAnd0m123"></script>
+        <script type="text/javascript" src="https://unpkg.com/swiper@8/swiper-bundle.min.js" nonce="rAnd0m123"></script>
+        <link type="text/css" rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
         <link type="text/css" rel="stylesheet" href="css/index.css" />
         <script type="text/javascript" src="js/main.js"></script>
 
-        <style>
-            .paper-kv {
-                background-image: url('img/bam-paper-2025-kv.jpg');
-            }
-            .paper-banner {
-                background-image: url('img/bam-paper-2025-bg.jpg');
-            }
-            .paper-banner-block:nth-child(1) {
-                background-image: url('img/bam-paper-2025-banner-1.jpg');
-            }
-            .paper-banner-block:nth-child(2) {
-                background-image: url('img/bam-paper-2025-banner-2.jpg');
-            }
-            .paper-banner-block:nth-child(3) {
-                background-image: url('img/bam-paper-2025-banner-3.jpg');
-            }
-            @media only screen and (max-width: 1024px) {
-                .paper-kv {
-                    background-image: url('img/bam-paper-2025-kv-m.jpg');
-                }
-                .paper-banner-block:nth-child(1) {
-                    background-image: url('img/bam-paper-2025-banner-1-m.jpg');
-                }
-                .paper-banner-block:nth-child(2) {
-                    background-image: url('img/bam-paper-2025-banner-2-m.jpg');
-                }
-                .paper-banner-block:nth-child(3) {
-                    background-image: url('img/bam-paper-2025-banner-3-m.jpg');
-                }
-            }
-        </style>
     </head>
     <body>
-        <div class="bam-paper-2025-wrap">
-            <section class="paper-kv" data-scroll-show-parent>
-                <h1 data-scroll-show="250">2025<br>永續健康白皮書</h1>
-                <article data-scroll-show="750">
-                    <div>
-                        <h2>守護記憶</h2>
-                        <p></p>
-                    </div>
-                    <p>南山人壽與工研院健康樂活智慧醫療照護聯盟攜手合作，透過國人生活習慣大調查了解國人飲食、運動、睡眠、社交等生活習慣，並探討其與失智風險之潛在關聯；提升大眾對失智預防的重視，從生活做起，及早守護大腦健康。</p>
-                    <a class="btn-kv" href="https://nanshanhealthyblob.blob.core.windows.net/others/永續健康白皮書.pdf" target="_blank" rel="noreferrer noopener"><img class="fullimg" src="img/bam-paper-2025-btn-1.png"></a>
-                </article>
-            </section>
-            <section class="paper-banner">
-                <div class="paper-banner-content">
-                    <div class="paper-banner-block" data-pin="2024" data-scroll-show><a href="https://nanshanhealthyblob.blob.core.windows.net/others/2024南山人壽生活習慣調查報告.pdf" target="_blank" rel="noreferrer noopener"><img class="fullimg" src="img/bam-paper-2025-btn-2.png"></a></div>
-                    <div class="paper-banner-block" data-pin="2023" data-scroll-show><a href="https://nanshanhealthyblob.blob.core.windows.net/others/2023跨世代共好白皮書.pdf" target="_blank" rel="noreferrer noopener"><img class="fullimg" src="img/bam-paper-2025-btn-3.png"></a></div>
-                    <div class="paper-banner-block" data-pin="2022" data-scroll-show><a href="https://nanshanhealthyblob.blob.core.windows.net/others/南山人壽x工研院延長健康壽命白皮書.pdf" target="_blank" rel="noreferrer noopener"><img class="fullimg" src="img/bam-paper-2025-btn-4.png"></a></div>
+        <div class="bam-newspaper-2025-wrap">
+            <div class="newspaper-swiper">
+                <div class="swiper-btn-block">
+                    <div class="swiper-button-prev"><img class="fullimg" src="img/bam-newspaper-btn-prev.png"></div>
+                    <div class="swiper-pagination for-m"></div>
+                    <div class="swiper-button-next"><img class="fullimg" src="img/bam-newspaper-btn-next.png"></div>
                 </div>
-            </section>
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide" style="padding-bottom: 0;">
+                            <img class="fullimg" src="img/bam-newspaper-2025-title-1.png">
+                            <h2>每人長照準備需求682萬元   逾3成年輕人毫無準備</h2>
+                            <p class="font-small" style="line-height: 200%;">南山甄健康/台北報導</p>
+                            <p>生活中的小習慣，正一點一滴吃掉你的健康。為提升國人健康風險意識，南山人壽與工研院健康樂活與智慧醫療照護聯盟10月15日發布《2025永續健康白皮書》，揭示國人生活習慣趨勢調查結果，並爬梳醫學文獻探討生活習慣與疾病的關聯。調查發現，2025年失智症已躍升國人最擔憂的疾病之一，「睡不飽、吃不好」現象普遍，5成民眾曾受失眠困擾，且塑膠微粒充斥國人生活，超過4成年輕世代週週吃微波食品、喝瓶裝飲料；財務準備方面，國人平均未來長照準備金需求達682萬元，現存缺口仍有329萬元，其中逾3成年輕世代對長照毫無準備…。</p>
+                            <br>
+                            <p class="font-small">南山人壽連續二年追蹤「國人生活習慣趨勢」，發現國人的運動與睡眠習慣，表現與去年持平，依舊不愛動又晚睡，47%國人每週運動時數低於1小時；而晚睡又睡不飽的現象普遍，約４成受訪者半夜12點後才就寢，且28%睡不到5小時。南山人壽矢志成為「永續健康領航者」，積極讓保險從事後理賠，往前延伸至協助保戶促進健康，並且大力呼籲民眾透過良好生活習慣、妥善規劃保障，活得好、健康到老，及早為百歲人生做準備。</p>
+                            <br>
+                            <div class="div-flex">
+                                <div class="div-flex-1">
+                                    <article>
+                                        <div class="name-flex">
+                                            <h3 class="font-large">尹崇堯</h3>
+                                            <p>南山董座</p>
+                                        </div>
+                                        <p class="font-large">百歲人生四大解方</p>
+                                        <p class="font-small" style="margin-top: 0.5em;">南山郝長壽/台北報導<br>面對百歲人生，尹崇堯提出南山人壽四大解方，包含一、設計更貼近日常的外溢保單；二、縮小保障缺口；三、延長長期險保障年齡至百歲；四、申設健康服務子公司。</p>
+                                    </article>
+                                    <img src="img/bam-newspaper-2025-img-1.png">
+                                </div>
+                                <div class="div-flex-1">
+                                    <article>
+                                        <div class="name-flex">
+                                            <h3 class="font-large">范文偉</h3>
+                                            <p>南山總經理</p>
+                                        </div>
+                                        <p class="font-large">八大惡習侵蝕記憶</p>
+                                        <p class="font-small" style="margin-top: 0.5em;">南山常運動/台北報導<br>據南山人壽永續健康白皮書發現，國人八大不良生活習慣，包含缺少運動又每天久坐、晚睡又睡不飽、愛吃甜食炸物、無法天天吃蔬果、日常生活充斥塑膠微粒、體重過重、未定期看牙醫、中壯世代社交活動較少。</p>
+                                    </article>
+                                    <img src="img/bam-newspaper-2025-img-2.png">
+                                </div>
+                            </div>
+                            <br>
+                            <h3 class="title-h3 blue">八大危險因子 失智風險升高<img src="img/bam-newspaper-2025-title-deco.png"></h3>
+                            <br>
+                            <img class="fullimg" src="img/bam-newspaper-2025-img-3.png">
+                            <br>
+                            <div class="div-flex">
+                                <div class="div-flex-2">
+                                    <h3 class="font-bigger">臺北榮民總醫院副院長<br>王署軍醫師</h3>
+                                    <p class="font-small" style="margin-top: 0.5em;">三個面向探討失智症新視角：<br>一、透過控制可改善的危險因子<br>二、利用新興藥物延緩病程<br>三、建構以患者為中心的長照<br>　　與社會支持系統</p>
+                                    <img src="img/bam-newspaper-2025-img-4.png">
+                                </div>
+                                <div class="div-flex-2">
+                                    <h3 class="font-bigger">台北市立關渡醫院院長<br>陳亮恭醫師</h3>
+                                    <p class="font-small" style="margin-top: 0.5em;">可參照TIGER和FINGER試驗的介入模式，將規律運動、健康飲食、認知訓練、血管風險監控等實證有效的預防行為納入保單條件，透過保費折扣、健康紅利或額外保障等機制，激勵保戶持續參與預防活動，創造個人健康、保險永續和公共衛生三贏。</p>
+                                    <img src="img/bam-newspaper-2025-img-5.png">
+                                </div>
+                                <div class="div-flex-2">
+                                    <h3 class="font-bigger">聯合整形外科診所院長<br>林靜芸醫師</h3>
+                                    <p class="font-small" style="margin-top: 0.5em;">建議專科醫學會、政府機構應加強失智相關教育及照護指引，讓失智病患可早期發現，及早治療，延緩惡化，也讓家屬及業者能有方向依循。</p>
+                                    <img src="img/bam-newspaper-2025-img-6.png">
+                                </div>
+                            </div>
+                            <hr class="thick">
+                            <div class="slide-bottom" style="margin-top: 1em;">
+                                <p>資料來源：2025永續健康白皮書</p>
+                                <img src="img/bam-newspaper-2025-more.png">
+                                <p>PW-04-1140036, 第1頁, 共7頁</p>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <img class="fullimg" src="img/bam-newspaper-2025-title-2.png">
+                            <div class="promise-flex">
+                                <article>
+                                    <h3><p>迎接百歲人生<br><span>南山人壽董事長尹崇堯提四大承諾</span></p></h3>
+                                    <p>「我們正在見證人類史上首次的高齡族群，高齡是一個族群，不再是個案。」尹崇堯董事長對壽命延長非常有感觸，他指出，據國發會人口推估，2024年台灣85歲以上人口約44萬人，到2070年將增加到近219萬人，國人壽命不斷延長，如何健康走完近100歲的人生旅程將是重點。<br>面對陪伴保戶健康走完百歲人生，尹崇堯董事長首度提出四大承諾，更強調「百歲人生，從零開始」，現在就開始做準備。希望以積極正向的方式，讓民眾在面對百歲人生的挑戰時，對保險有更正面的想像。</p>
+                                </article>
+                                <img src="img/bam-newspaper-2025-img-7.png">
+                            </div>
+                            <hr class="thick">
+                            <div class="promise-flex">
+                                <article>
+                                    <h3><p>活到100歲如何規劃退休？<br><span>南山人壽總經理范文偉兩心法</span></p></h3>
+                                    <p>面對百歲人生，范文偉總經理早已「有備而來」。考量未來醫療費用與長照費用肯定比現在昂貴許多，醫療通膨每年約4.7%、消費通膨每年約2%。因此范文偉總經理很早就將重大疾病、醫療、長照風險轉嫁給保單，重大疾病醫療額度規劃至少300萬元以上，長照險每月給付10萬元，可以給付16年，不希望未來退休金被重症或失智症所侵蝕。<br>據「2025永續健康白皮書」調查，長照照護成本平均每月約需3.3萬元，受訪者估算長照準備金平均約682萬元，整體受訪者長照財務缺口約329萬元，若是30歲以下年輕世代則缺口有447萬元，部分缺口可用長照險等保險方案解決。</p>
+                                </article>
+                            </div>
+                            <hr class="thick">
+                            <div class="slide-bottom" style="margin-top: 1em;">
+                                <p>資料來源：2025永續健康白皮書</p>
+                                <p>PW-04-1140036, 第2頁, 共7頁</p>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <img class="fullimg" src="img/bam-newspaper-2025-title-3.png">
+                            <h3 class="title-h3 sky">台灣失智人口解析<img src="img/bam-newspaper-2025-title-deco.png"></h3>
+                            <article style="width: 95%; margin: auto;">
+                                <br>
+                                <p class="font-big">台灣失智症人口在2024年約<span class="peach">35萬人，推估2031年將逾47萬人，2041年近68萬人以上</span>，顯示失智症人口數，有逐年攀升趨勢，失智已成為重要健康議題。</p>
+                                <br>
+                                <div class="circle-flex">
+                                    <div>
+                                        <h4>35萬</h4>
+                                        <p>2024年<br>台灣失智人口約35萬</p>
+                                    </div>
+                                    <div>
+                                        <h4>1.2萬</h4>
+                                        <p>30-64歲中年失智人口<br>（早發性失智）</p>
+                                    </div>
+                                    <div>
+                                        <h4>7.99%</h4>
+                                        <p>65歲以上盛行率<br>每12.5位長者就有<br>一位失智症患者</p>
+                                    </div>
+                                </div>
+                                <br>
+                            </article>
+                            <hr class="thin">
+                            <hr class="thick">
+                            <h3 class="title-h3 pink">ApoE ε4基因揭密：阿茲海默症的主要風險因子<img src="img/bam-newspaper-2025-title-deco.png"></h3>
+                            <br>
+                            <div class="div-flex" style="border: 0;">
+                                <div class="div-flex-3">
+                                    <h4>單一ApoE ε4基因</h4>
+                                    <h5>3-5倍</h5>
+                                    <p>帶有一個 ApoE ε4 基因者，罹患阿茲海默症的<br><span>風險增加約3-5倍</span></p>
+                                </div>
+                                <div class="div-flex-3">
+                                    <h4>雙重ApoE ε4基因</h4>
+                                    <h5>10-15倍</h5>
+                                    <p>帶有兩個 ApoE ε4 基因(同型合子) 者，風險更可<br><span>提高至10至15倍</span></p>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="title-dash-flex peach"><p></p><h4>什麼是ApoE基因？</h4><span></span></div>
+                            <p class="p-1">ApoE基因位於第19對染色體，負責調節血脂，與心血管疾病、中風及腦部健康密切相關。 它能協助清除腦內致病蛋白質，減少異常沉積，維持腦部正常運作。</p>
+                            <div class="title-dash-flex sky"><p></p><h4>ApoE基因檢測：帶有 ε4 基因，阿茲海默症風險高出數倍</h4><span></span></div>
+                            <p class="p-1">帶有 ε2 基因就像天生帶著「保護盾」，可降低阿茲海默症風險；ε3 基因則屬中性，不增不減；但 ε4 基因會大幅提高風險，帶一個 ε4；罹病機率高出 3‒5 倍；帶有兩個ε4，風險更 達 10‒15 倍，且會讓發病年齡提前。</p>
+                            <br>
+                            <hr class="thick">
+                            <h3 class="title-h3 sky">台灣人的ApoE ε4基因分布<img src="img/bam-newspaper-2025-title-deco.png"></h3>
+                            <div class="gene-flex">
+                                <div>
+                                    <article class="grass">
+                                        <p>16-18%</p>
+                                        <h4>一般<br>帶原率</h4>
+                                    </article>
+                                    <p>台灣人群中約有16%-18%的人<br>帶有至少一個ApoEε4基因</p>
+                                </div>
+                                <div>
+                                    <article class="pink">
+                                        <p>0.5-0.7%</p>
+                                        <h4>雙基因<br>帶原率</h4>
+                                    </article>
+                                    <p>約有0.5%到0.7%的台灣人帶有<br>兩個ApoEε4基因(同型合子)</p>
+                                </div>
+                                <div>
+                                    <article class="sky">
+                                        <p>3%</p>
+                                        <h4>高風險<br>群比例</h4>
+                                    </article>
+                                    <p>台灣精準醫學研究指出，約有3%<br>的人屬於ApoE ε4基因的高風險群</p>
+                                </div>
+                            </div>
+                            <br>
+                            <hr class="thick">
+                            <div class="slide-bottom" style="margin-top: 1em;">
+                                <p>資料來源：2025永續健康白皮書</p>
+                                <p>PW-04-1140036, 第3頁, 共7頁</p>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <img class="fullimg" src="img/bam-newspaper-2025-title-4.png">
+                            <div class="title-info-flex">
+                                <h4>你<br>知<br>道<br>嗎</h4>
+                                <p>?</p>
+                                <article>缺牙、聽力障礙與不良飲食習慣，這些看似微小的健康問題，其實都可能悄悄增加失智的風險。日常保健，就是守護大腦的第一步。</article>
+                            </div>
+                            <div class="info-wrap">
+                                <div class="info-block">
+                                    <div class="info-flex">
+                                        <img src="img/bam-newspaper-2025-icon-1.png">
+                                        <div>
+                                            <h4>膽固醇血症</h4>
+                                            <p>中年期膽固醇<span>≥ 240 mg/dl</span><br>罹患失智症風險比正常膽固醇濃度者高出57％</p>
+                                        </div>
+                                    </div>
+                                    <article>
+                                        失智風險增加
+                                        <h4>57%</h4>
+                                    </article>
+                                </div>
+                                <div class="info-block">
+                                    <div class="info-flex">
+                                        <img src="img/bam-newspaper-2025-icon-2.png">
+                                        <div>
+                                            <h4>獨居/社交孤立</h4>
+                                            <p>獨居者罹患失智症風險較與家人共居增加約30%<br><span>每累積2年獨居，風險約再提升10%</span></p>
+                                        </div>
+                                    </div>
+                                    <article>
+                                        失智風險增加
+                                        <h4>30%</h4>
+                                    </article>
+                                </div>
+                                <div class="info-block">
+                                    <div class="info-flex">
+                                        <img src="img/bam-newspaper-2025-icon-3.png">
+                                        <div>
+                                            <h4>缺牙</h4>
+                                            <p>咀嚼活腦防失智，缺牙增風險，<span>每少一顆牙齒，增加1%風險</span><br>日本推動「8020運動」，目標80歲時仍保有保有20顆自然牙，維持良好咀嚼功能，以享快樂及健康的飲食生活</p>
+                                        </div>
+                                    </div>
+                                    <article>
+                                        失智風險增加
+                                        <h4>53%</h4>
+                                    </article>
+                                </div>
+                                <div class="info-block">
+                                    <div class="info-flex">
+                                        <img src="img/bam-newspaper-2025-icon-4.png">
+                                        <div>
+                                            <h4>ApoE ε4</h4>
+                                            <p>帶有一個ApoE ε4基因者風險增加約3-5倍<br><span>帶有兩個ApoE ε4基因，風險更提高至10至15倍</span></p>
+                                        </div>
+                                    </div>
+                                    <article>
+                                        失智風險增加
+                                        <h4>3-5倍</h4>
+                                    </article>
+                                </div>
+                                <div class="info-block">
+                                    <div class="info-flex">
+                                        <img src="img/bam-newspaper-2025-icon-5.png">
+                                        <div>
+                                            <h4>語速變慢</h4>
+                                            <p><span>若語速變慢</span>，罹患偶發性非失智性認知障礙(CIND)的風險<br>就會增加，並由CIND轉變為，<span>失智症的風險也會增加約25%</span></p>
+                                        </div>
+                                    </div>
+                                    <article>
+                                        失智風險增加
+                                        <h4>25%</h4>
+                                    </article>
+                                </div>
+                                <div class="info-block">
+                                    <div class="info-flex">
+                                        <img src="img/bam-newspaper-2025-icon-6.png">
+                                        <div>
+                                            <h4>塑膠微粒</h4>
+                                            <p>每次旋轉寶特瓶瓶蓋時，就會產生約<span>500顆微粒</span>掉入水中<br>市售瓶裝水每公升平均含有約<span>24萬個塑膠顆粒</span></p>
+                                        </div>
+                                    </div>
+                                    <article>
+                                        失智患者比<br>正常人多
+                                        <h4>3-6倍</h4>
+                                    </article>
+                                </div>
+                                <div class="info-block">
+                                    <div class="info-flex">
+                                        <img src="img/bam-newspaper-2025-icon-7.png">
+                                        <div>
+                                            <h4>聽力障礙</h4>
+                                            <p>依據<span>聽力損失</span>程度，失智風險呈現劑量反應關係：<br><span>輕度增加2倍，中度增加3倍，重度增加5倍</span></p>
+                                        </div>
+                                    </div>
+                                    <article>
+                                        失智風險增加
+                                        <h4>2-5倍</h4>
+                                    </article>
+                                </div>
+                                <div class="info-block">
+                                    <div class="info-flex">
+                                        <img src="img/bam-newspaper-2025-icon-8.png">
+                                        <div>
+                                            <h4>睡眠呼吸中止症</h4>
+                                            <p><span>深層睡眠不足與記憶退化高度相關</span><br>若睡眠品質不佳，將顯著影響思考力與認知功能</p>
+                                        </div>
+                                    </div>
+                                    <article>
+                                        失智風險增加
+                                        <h4>43%</h4>
+                                    </article>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="slide-bottom" style="margin-top: 1em;">
+                                <p>資料來源：2025永續健康白皮書</p>
+                                <p>PW-04-1140036, 第4頁, 共7頁</p>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <img class="fullimg" src="img/bam-newspaper-2025-title-5.png">
+                            <br>
+                            <p class="font-big">國人普遍運動不足、久坐、晚睡又睡不夠，常吃油炸甜食等高熱量飲食，常使用一次性餐具與喝瓶裝飲料，使「塑膠微粒」成健康隱憂，這些生活習慣不僅提高慢性病風險，也可能增加失智機率。</p>
+                            <br>
+                            <hr class="thin">
+                            <br>
+                            <div class="div-flex" style="border: 0;">
+                                <div class="div-flex-4">
+                                    <img src="img/bam-newspaper-2025-percent-1.png">
+                                    <article>
+                                        <h4>缺少運動又久坐</h4>
+                                        <p><span>47%</span>國人每週運動時數低於1小時；近<span>20%</span>國人幾乎不運動；超過<span>5成國人</span>每天坐在椅子上的時間<span>超過6小時</span>。</p>
+                                    </article>
+                                </div>
+                                <div class="div-flex-4">
+                                    <img src="img/bam-newspaper-2025-percent-2.png">
+                                    <article>
+                                        <h4>晚睡又睡不飽</h4>
+                                        <p>近<span>4成</span>國人12點之後才睡，<span>18~30歲年輕世代</span>更是夜貓大軍，<span>5成</span>過了午夜才就寢！</p>
+                                    </article>
+                                </div>
+                            </div>
+                            <br>
+                            <hr class="thin">
+                            <br>
+                            <div class="div-flex" style="border: 0;">
+                                <div class="div-flex-4">
+                                    <img src="img/bam-newspaper-2025-percent-3.png">
+                                    <article>
+                                        <h4>無法天天吃蔬果</h4>
+                                        <p><span>47%</span>國人沒有天天吃蔬果，年輕世代有<span>58%</span>，中壯世代有<span>53%</span>，熟齡世代有<span>37%</span>沒有天天吃蔬果。</p>
+                                    </article>
+                                </div>
+                                <div class="div-flex-4">
+                                    <img src="img/bam-newspaper-2025-percent-4.png">
+                                    <article>
+                                        <h4>愛吃甜食炸物</h4>
+                                        <p><span>49%</span>國人每周至少吃1次以上甜食，年輕世代更高達<span>65%</span>。此外，<span>81%</span>國人每月都會吃油炸食物，其中<span>40%</span>年輕世代更是每周都要油炸食物。</p>
+                                    </article>
+                                </div>
+                            </div>
+                            <br>
+                            <hr class="thin">
+                            <br>
+                            <div class="div-flex" style="border: 0;">
+                                <div class="div-flex-4">
+                                    <img src="img/bam-newspaper-2025-percent-5.png">
+                                    <article>
+                                        <h4>塑膠微粒</h4>
+                                        <p><span>68%</span>人每月使用免洗餐具，其中年輕世代有<span>64%</span>每週使用免洗餐具。此外，<span>42%</span>年輕世代每週食用以塑膠容器加熱的食品，<span>43%</span>每週飲用瓶裝水。</p>
+                                    </article>
+                                </div>
+                                <div class="div-flex-4">
+                                    <img src="img/bam-newspaper-2025-percent-6.png">
+                                    <article>
+                                        <h4>社交活動少</h4>
+                                        <p><span>14%</span>國人幾乎不參與任何社交活動，另有<span>65%</span>的中壯世代社交參與明顯偏少。</p>
+                                    </article>
+                                </div>
+                            </div>
+                            <br>
+                            <hr class="thin">
+                            <br>
+                            <div class="div-flex" style="border: 0;">
+                                <div class="div-flex-5">
+                                    <article>
+                                        <h4>未定期看牙醫</h4>
+                                        <br>
+                                        <img src="img/bam-newspaper-2025-tooth.png">
+                                    </article>
+                                    <img src="img/bam-newspaper-2025-img-8.png">
+                                </div>
+                            </div>
+                            <br>
+                            <hr class="thin">
+                            <br>
+                            <div class="div-flex" style="border: 0;">
+                                <div class="div-flex-5">
+                                    <article>
+                                        <h4>體重過重</h4>
+                                    </article>
+                                </div>
+                            </div>
+                            <div class="div-flex" style="border: 0;">
+                                <div class="div-flex-6">
+                                    <article>
+                                        <p><span>40%</span>國人BMI超過標準</p>
+                                        <img src="img/bam-newspaper-2025-bmi-1.png">
+                                    </article>
+                                    <article>
+                                        <h5>BMI超標者，都有著下列不良的生活習慣</h5>
+                                        <div>
+                                            <div>
+                                                <p><span>52%</span>每周運動低於1小時</p>
+                                                <p><span>52%</span>每天久坐超過6小時</p>
+                                                <p><span>51%</span>每周吃1次以上甜食</p>
+                                            </div>
+                                            <img src="img/bam-newspaper-2025-bmi-2.png">
+                                        </div>
+                                    </article>
+                                    <img src="img/bam-newspaper-2025-img-9.png" alt="">
+                                </div>
+                            </div>
+                            <br>
+                            <hr class="thin">
+                            <hr class="thick">
+                            <div class="slide-bottom" style="margin-top: 1em;">
+                                <p>資料來源：2025永續健康白皮書</p>
+                                <p>PW-04-1140036, 第5頁, 共7頁</p>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <img class="fullimg" src="img/bam-newspaper-2025-title-6.png">
+                            <br>
+                            <div class="comic-block" style="background: url('img/bam-newspaper-2025-comic.png');">
+                                <p class="comic-title comic-1-title">大伯突然過世後，深受打擊的奶奶失智了...</p>
+                                <p class="comic-des comic-1-des">奶奶將抹布丟進鍋子裡煮、亂穿衣服及大小便失禁，察覺到時已是重度失智。</p>
+                                <p class="comic-title comic-2-title">照顧行為失控奶奶的責任，<br>全落在身為二媳婦的媽媽身上</p>
+                                <p class="comic-des comic-2-des">在照顧二年多後，決定將奶奶送到安養中心，一個月約2萬元</p>
+                                <p class="comic-title comic-3-title">奶奶離世後不久，糖尿病的爸爸也失智了</p>
+                                <p class="comic-des comic-3-des">因糖尿病進行截肢手術，住院確診新冠肺炎，又是洗腎病人，隔離完後就出現亂認人情況，將小雅媽媽認成奶奶，時空也錯亂，不知道自己身處何方。</p>
+                                <p class="comic-title comic-4-title">照顧重擔依舊在媽媽身上</p>
+                                <p class="comic-des comic-4-des">爸爸是傳統的大男人，不請外傭，也不想到安養中心，要求小雅媽媽照顧，因爸爸膝蓋以下截肢，除每周三次外出洗腎，其餘時間幾乎卧床足不出戶。</p>
+                                <p class="comic-title comic-5-title">媽崩潰指責子女都不分擔責任</p>
+                                <p class="comic-des comic-5-des">接連照護兩位失智家人，小雅媽媽幾乎情緒崩潰，有時甚至說出「生了三個小孩都沒有用!」</p>
+                                <p class="comic-title comic-6-title">好怕同血源的我，<br>未來也會失智...</p>
+                                <p class="comic-des comic-6-des">小雅自己也很擔心失智會遺傳，因此作了失智基因檢測，並常常督促自己，一定要有健康的飲食、持續運動，同時想存夠1,000萬元的長照費用，不想成為小孩的負擔。</p>
+                            </div>
+                            <div class="slide-bottom" style="margin-top: 1em;">
+                                <p>資料來源：2025永續健康白皮書</p>
+                                <p>PW-04-1140036, 第6頁, 共7頁</p>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide slide-map" style="padding-left: 0; padding-right: 0; padding-bottom: 0;">
+                            <img class="fullimg" style="padding: 0 3%;" src="img/bam-newspaper-2025-title-7.png">
+                            <div>
+                                <br>
+                                <p class="font-big" style="padding: 0 5%;">健康守護圈合作夥伴攜手打造「失智服務導航」，從健康期到失智症早期與中晚期，提供全方位支持，協助民眾獲得更完整與貼心的照護。</p>
+                                <br>
+                                <div class="map-block" style="background: url('img/bam-newspaper-2025-map.png');"></div>
+                                <p class="p-source font-small gray">資料來源：<br>2025永續健康白皮書</p>
+                                <p class="p-page font-small gray">PW-04-1140036, 第7頁, 共7頁</p>
+                                <br>
+                                <p class="font-small gray" style="padding: 0 5%;">健康守護圈之加值服務或合作廠商提供之產品、服務或優惠訊息等，均非屬保險契約權利義務之一部分。本公司與 合作廠商間無代理或類似關係，合作廠商提供之產品、服務或優惠訊息，係由合作廠商各自提供及負責。</p>
+                                <br>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
         </div>
     </body>
     

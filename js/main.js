@@ -6,13 +6,22 @@ $(function() {
         headerHeight = 0;
     }
 
-
-    scrollEffect();
-    $(window).scroll(function() {
-        scrollEffect();
-    })
-
     urlDetect();
+
+
+    new Swiper('.newspaper-swiper .swiper', {
+        speed: 500,
+        spaceBetween: 50,
+        autoHeight: true,
+        navigation: {
+            nextEl: '.newspaper-swiper .swiper-button-next',
+            prevEl: '.newspaper-swiper .swiper-button-prev',
+        },
+        pagination: {
+            el: '.newspaper-swiper .swiper-pagination',
+            type: 'fraction',
+        },
+    });
 })
 
 
@@ -26,43 +35,6 @@ $(document)
 .on('mousedown', 'img', function(e) {
     e.preventDefault();
 })
-
-function scrollEffect() {
-    $('[data-scroll-show-parent]').each(function() {
-        if($(window).scrollTop() > $(this).offset().top - $(window).height()*0.75) {
-            if($(this).data('scroll-show-parent').length != '') {
-                $(this).find('[data-scroll-show]').each(function(index) {
-                    setTimeout(function() {
-                        $(this).addClass('scrollShowActive');
-                    }.bind(this), index*$(this).closest('[data-scroll-show-parent]').data('scroll-show-parent'))
-                })
-            } else {
-                $(this).find('[data-scroll-show]').each(function() {
-                    if($(this).data('scroll-show').length === 0) {
-                        $(this).addClass('scrollShowActive');
-                    } else {
-                        setTimeout(function() {
-                            $(this).addClass('scrollShowActive');
-                        }.bind(this), $(this).data('scroll-show'))
-                    }
-                })
-            }
-        }
-    })
-    $('[data-scroll-show]').each(function() {
-        if($(window).scrollTop() > $(this).offset().top - $(window).height()*0.75) {
-            if($(this).closest('[data-scroll-show-parent]').length == 0) {
-                if($(this).data('scroll-show').length === 0) {
-                    $(this).addClass('scrollShowActive');
-                } else {
-                    setTimeout(function() {
-                        $(this).addClass('scrollShowActive');
-                    }.bind(this), $(this).data('scroll-show'))
-                }
-            }
-        }
-    })
-}
 
 
 function urlDetect() {

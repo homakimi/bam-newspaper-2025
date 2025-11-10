@@ -1,9 +1,14 @@
 @import 'style'
 
 $blue: #3698ce
-$green: #82cece
-$grass: #d6ea91
-$black: #545454
+$sky: #6acaeb
+$peach: #fc7e81
+$pink: #ffb6b6
+$brown: #ab5740
+$green: #51a182
+$grass: #89d4bf
+$black: #000
+$gray: #717171
 
 @keyframes fadein
     to
@@ -11,132 +16,531 @@ $black: #545454
         transform: none
             
 body
-    background: #FFF
+    background: #f3f3f3
     
-.bam-paper-2025-wrap
+.bam-newspaper-2025-wrap
     color: $black
-    font-size: 1.35vw
-    [data-scroll-show]
-        opacity: 0
-        transform: translateY(3em)
-        transition: opacity 1s, transform 1s
-        &.scrollShowActive
-            opacity: 1
-            transform: translateY(0em)
-    .paper-kv
-        position: relative
-        width: 100%
-        padding-top: percentage(920/1920)
-        background-repeat: no-repeat! important
-        background-position: center center! important
-        background-size: cover! important
-        h1
-            position: absolute
-            font-size: 5vw
-            line-height: 120%
-            top: 10%
-            left: 6%
-            font-weight: bold
-        article
-            position: absolute
-            top: 40%
+    font-weight: bold
+    +font-normal
+    text-align: justify
+    .newspaper-swiper
+        max-width: 1024px
+        margin: auto
+        .swiper-button-prev,
+        .swiper-button-next
+            width: 75px
+            margin: auto
             left: 0
-            width: 51%
+            right: 0
+            &::after
+                display: none
+        .swiper-button-prev
+            left: -925px
+        .swiper-button-next
+            right: -925px
+        .swiper
+            width: 80%
+            margin: auto
+        .swiper-slide
+            padding: 3%
             background: #FFF
-            padding: 2.5% 4% 2.5% 6%
-            border-radius: 0 2.5em 2.5em 0
-            text-align: justify
-            box-shadow: 0.35em 0.35em 0 $green, 0 0.35em 0 $green
+        h2
+            +font-huge
+            color: $blue
+            text-align: center
+        hr.thin
+            border: 0
+            border-top: 1px solid $gray
+        hr.thick
+            border: 0
+            border-top: 3px solid $gray
+            margin-top: 0.2em
+        .title-h3
+            +font-large
+            color: #FFF
+            padding: 0.25em 0.5em
+            img
+                position: relative
+                display: inline-block
+                width: 2.5em
+                top: -0.6em
+                left: 0.75em
+                vertical-align: middle
+            &.blue
+                background: $blue
+            &.sky
+                background: $sky
+            &.pink
+                background: $pink
+        .peach
+            color: $peach
+        .gray
+            color: $gray
+
+        .div-flex
+            display: flex
+            justify-content: center
+            align-items: stretch
+            border-top: 1px solid $gray
+            border-bottom: 1px solid $gray
             > div
+                border-left: 1px solid $gray
+                &:first-child
+                    border: 0
+            .div-flex-1
+                position: relative
+                padding: 1em
+                flex: 1 0 0
+                article
+                    width: 64%
+                h3
+                    line-height: 120%
+                img
+                    position: absolute
+                    width: 35%
+                    bottom: 0
+                    right: 0
+            .div-flex-2
+                position: relative
+                padding: 1em 0.5em
+                flex: 1 0 0
+                h3
+                    line-height: 120%
+                p
+                    width: 70%
+                img
+                    position: absolute
+                    width: 35%
+                    bottom: 0
+                    right: 0
+            .div-flex-3
+                padding: 1em 0.5em
+                flex: 1 0 0
+                text-align: center
+                h4
+                    width: 70%
+                    margin: auto
+                    padding: 0.25em 0
+                    color: #FFF
+                    +font-bigger
+                h5
+                    +font-huge
+                &:nth-child(1)
+                    h4
+                        background: $sky
+                    h5,
+                    span
+                        color: $blue
+                &:nth-child(2)
+                    h4
+                        background: $pink
+                    h5,
+                    span
+                        color: $peach
+            .div-flex-4,
+            .div-flex-5
                 display: flex
                 justify-content: center
-                align-items: center
-                gap: 3%
-                margin-bottom: 3%
-                color: $blue
-                h2
-                    font-size: 2vw
-                    font-style: italic
-                    font-weight: bold
-                p
+                align-items: flex-start
+                gap: 1em
+                padding: 0.5em 1em
+                flex: 1 0 0
+                img
+                    width: 37.5%
+                article
                     flex: 1 0 0
-                    margin-top: 3px
-                    border-bottom: 2px dashed $blue
-                    opacity: 0.75
-            .btn-kv
-                position: absolute
-                display: block
-                bottom: -25%
-                right: 5%
-                width: 38%
-                transition: transform 0.5s
-
-    .paper-banner
-        background-repeat: repeat! important
-        background-position: top left! important
-        background-size: 12.5%! important
-        border-bottom: 1.5em solid $grass
-        .paper-banner-content
-            width: 75%
-            margin: auto
-            padding: 0 1.5%
-            background: #FFF
-            .paper-banner-block
-                position: relative
+                    h4
+                        display: inline-block
+                        position: relative
+                        +font-bigger
+                        &::before
+                            z-index: -1
+                            position: absolute
+                            display: block
+                            content: ''
+                            bottom: 0
+                            left: -2.5%
+                            width: 105%
+                            height: 0.5em
+                            background: rgba($sky, 0.35)
+                            border-radius: 3em
+                    p
+                        margin-top: 0.5em
+                        span
+                            color: $blue
+            .div-flex-5
+                align-items: center
+                gap: 7em
+                padding: 0 8em 0 1.5em
+                article
+                    flex: 1 0 0
+                    img
+                        display: block
+                        width: 70%
+                        margin: auto
+                        margin-top: 2em
+                > img
+                    width: 65%
+            .div-flex-6
+                display: flex
+                justify-content: space-between
+                align-items: flex-start
                 width: 100%
-                padding-top: percentage(550/1280)
-                background-repeat: no-repeat! important
-                background-position: center center! important
-                background-size: cover! important
-                a
-                    display: block
+                padding-right: 3em
+                > img
+                    width: 17%
+                article
+                    padding: 0.5em 1.5em
+                    &:nth-child(2)
+                        border-left: 2px dashed $gray
+                    h5
+                        +font-big
+                    p
+                        span
+                            color: $blue
+                    img
+                        width: 10.5em
+                        margin: 1em 0
+                    > div
+                        display: flex
+                        justify-self: center
+                        align-items: center
+                        gap: 1em
+
+        .name-flex
+            display: flex
+            justify-content: flex-start
+            align-items: center
+            gap: 12px
+            p
+                // font-weight: bold
+                color: #FFF
+                background: $sky
+                padding: 0.25em 1em
+        .promise-flex
+            display: flex
+            justify-content: center
+            align-items: center
+            gap: 1.5em
+            article
+                flex: 1 0 0
+                h3
+                    +font-normal
+                    padding: 1em
+                    p
+                        +font-bigger
+                    span
+                        color: $blue
+                > p
+                    border-top: 1px solid $gray
+                    padding: 1em
+            img
+                display: block
+                width: 32%
+        .circle-flex
+            display: flex
+            justify-content: center
+            align-items: center
+            gap: 8%
+            > div
+                display: flex
+                align-items: center
+                flex-direction: column
+                text-align: center
+                border-radius: 50%
+                width: 13em
+                height: 13em
+                border: 2px solid $gray
+                &:nth-child(1)
+                    border-color: $grass
+                    h4
+                        color: $green
+                &:nth-child(2)
+                    border-color: $pink
+                    h4
+                        color: $peach
+                &:nth-child(3)
+                    border-color: $sky
+                    h4
+                        color: $blue
+                    
+                h4
+                    +font-huge
+                    border-bottom: 1px dashed rgba($gray, 0.35)
+                    width: 60%
+                    margin: 0 auto
+                    padding: 0.15em 0
+                    margin-top: 10%
+                    margin-bottom: 0.25em
+
+        .title-dash-flex
+            display: flex
+            justify-content: flex-start
+            align-items: center
+            padding: 0 1em
+            gap: 0.5em
+            &.peach
+                color: $peach
+                p
+                    background: $peach
+            gap: 0.5em
+            &.sky
+                color: $sky
+                p
+                    background: $sky
+            p
+                width: 1em
+                height: 1em
+                border-radius: 0 65% 0 0
+                background: #000
+            h4
+                +font-big
+            span
+                flex: 1 0 0
+                border-top: 1px dashed rgba($gray, 0.5)
+
+        .gene-flex
+            display: flex
+            justify-content: center
+            align-items: flex-start
+            gap: 5%
+            padding: 0 3%
+            > div
+                flex: 1 0 0
+                article
+                    position: relative
+                    padding: 2em 0 1.5em 0
+                    &.grass
+                        h4,
+                        p
+                            background: $grass
+                    &.pink
+                        h4,
+                        p
+                            background: $pink
+                    &.sky
+                        h4,
+                        p
+                            background: $sky
+                    h4
+                        +font-bigger
+                        padding: 0.75em 1em 0.75em 6em
+                        line-height: 120%
+                        background: #CCC
+                        color: #FFF
+                        border-radius: 3em 1em 3.5em 3em
+                    p
+                        position: absolute
+                        top: 50%
+                        left: -0.25em
+                        display: flex
+                        justify-content: center
+                        align-items: center
+                        +font-big
+                        // font-weight: bold
+                        width: 6.5em
+                        height: 6.5em
+                        border-radius: 100%
+                        border: 3px solid #FFF
+                        color: #FFF
+                        background: #CCC
+                        transform: translateY(-50%)
+                > p
+                    text-align: center
+
+        .title-info-flex
+            display: flex
+            justify-content: flex-start
+            align-items: center
+            gap: 0.5em
+            padding: 0 3%
+            h4
+                color: $blue
+                line-height: 100%
+                +font-big
+            p
+                color: $blue
+                +font-mark
+                // font-weight: bold
+            article
+                +font-big
+        .info-wrap
+            padding: 0 1.5%
+            .info-block
+                display: flex
+                justify-content: flex-start
+                align-items: stretch
+                color: $gray
+                border-top: 1px solid $gray
+                &:nth-child(odd)
+                    border-left: 1px solid $gray
+                    border-radius: 3.5em 0 0 0
+                    article
+                        border-left: 1px solid $gray
+                &:nth-child(even)
+                    border-right: 1px solid $gray
+                    border-radius: 0 3.5em 0 0
+                    flex-direction: row-reverse
+                    article
+                        border-right: 1px solid $gray
+                &:last-child
+                    border-bottom: 1px solid $gray
+                            
+                .info-flex
+                    flex: 1 0 0
+                    display: flex
+                    justify-content: flex-start
+                    align-items: center
+                    padding: 1em 2em
+                    gap: 1em
+                    img
+                        display: block
+                        width: 8em
+                        flex-shrink: 0
+                    h4
+                        +font-large
+                        color: $black
+                        margin-bottom: 0.25em
+                    span
+                        color: $blue
+                        +font-big
+                article
+                    display: flex
+                    justify-content: center
+                    flex-direction: column
+                    color: $peach
+                    text-align: center
+                    +font-big
+                    width: 20%
+                    h4
+                        +font-super
+                        line-height: 100%
+
+        .comic-block
+            position: relative
+            width: 100%
+            padding-top: percentage(1113/822)
+            background-repeat: no-repeat! important
+            background-position: center center! important
+            background-size: cover! important
+            p
+                position: absolute
+                &.comic-title
+                    font-size: 15.3px
+                &.comic-des
+                    font-size: 13px
+                    line-height: 135%
+                    color: $brown
+            .comic-1-title
+                top: 1.35%
+                left: 8.5%
+            .comic-2-title
+                top: 1.3%
+                left: 70.5%
+            .comic-3-title
+                top: 23.7%
+                left: 8.7%
+            .comic-4-title
+                top: 23.7%
+                left: 60%
+            .comic-5-title
+                top: 58.7%
+                left: 9.75%
+            .comic-6-title
+                top: 62.5%
+                left: 77.5%
+            .comic-1-des
+                top: 8%
+                left: 3%
+                width: 30%
+            .comic-2-des
+                top: 7%
+                left: 66.25%
+                width: 25%
+            .comic-3-des
+                top: 31.9%
+                left: 5%
+                width: 32%
+            .comic-4-des
+                top: 30.5%
+                left: 58%
+                width: 38%
+            .comic-5-des
+                top: 68%
+                left: 3.5%
+                width: 36%
+            .comic-6-des
+                top: 89%
+                left: 17.5%
+                width: 38%
+
+
+        .map-block
+            position: relative
+            width: 100%
+            padding-top: percentage(1048/879)
+            background-repeat: no-repeat! important
+            background-position: center center! important
+            background-size: cover! important
+
+        .slide-map
+            > div
+                position: relative
+                background: rgba($sky, 0.15)
+                .p-source
                     position: absolute
-                    width: 23%
-                    top: 75.5%
-                    left: 28.5%
-                    transition: transform 0.5s
-                
+                    left: 3%
+                    bottom: 7.5%
+                .p-page
+                    position: absolute
+                    right: 5%
+                    bottom: 2%
+        .p-1
+            +font-big
+            padding: 0.5em 1.5em 0.5em 2.15em
 
+        .slide-bottom
+            display: flex
+            justify-content: space-between
+            align-items: center
+            color: $gray
+            p
+                +font-small
+            img
+                width: 10em
 
-@media only screen and (min-width: 1025px)
-    .bam-paper-2025-wrap
-        .btn-kv:hover,
-        .paper-banner-block a:hover
-            transform: scale(1.05)
-        
 
 @media only screen and (max-width: 1024px)
-    .bam-paper-2025-wrap
-        font-size: 2.75vw
-        .paper-kv
-            padding-top: percentage(1257/1024)
-            h1
-                font-size: 8.5vw
-                top: 6%
-                left: 8%
-            article
-                top: 25%
-                width: 85%
-                padding: 3% 5% 7% 8%
-                > div
-                    h2
-                        font-size: 4vw
-                    p
-                        border-bottom-width: 1px
-                .btn-kv
-                    bottom: -23%
-                    right: 48%
-                    width: 45%
+    .bam-newspaper-2025-wrap
+        .swiper-btn-block
+            display: flex
+            justify-content: center
+            align-items: center
+            margin: 3% 0
+            .swiper-button-prev,
+            .swiper-button-next,
+            .swiper-pagination
+                position: static
+                margin: 0
+                transform: none
+                height: auto
+            .swiper-button-prev,
+            .swiper-button-next
+                width: 5em
+            .swiper-pagination
+                width: 5em
+                color: $gray
+                +font-large
+                font-weight: normal
 
-        .paper-banner
-            border-bottom-width: 3em
-            .paper-banner-content
+        .newspaper-swiper
+            width: 90%
+            .swiper
                 width: 100%
-                padding: 0
-                .paper-banner-block
-                    padding-top: percentage(560/1024)
-                    a
-                        width: 30%
-                        top: 72%
-                        left: 8%
-        
+        .newspaper-swiper
+            .comic-block
+                p
+                    &.comic-title
+                        font-size: 1.7vw
+                    &.comic-des
+                        font-size: 1.45vw

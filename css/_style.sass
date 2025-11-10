@@ -2,6 +2,39 @@
 
 html 
     font-size: 16px
+    
+@mixin font-mark
+    font-size: 64px
+    @media only screen and (max-width: 1024px)
+        font-size: 8vw
+@mixin font-super
+    font-size: 45px
+    @media only screen and (max-width: 1024px)
+        font-size: 5vw
+@mixin font-huge
+    font-size: 35.5px
+    @media only screen and (max-width: 1024px)
+        font-size: 3.9vw
+@mixin font-large
+    font-size: 28px
+    @media only screen and (max-width: 1024px)
+        font-size: 3.1vw
+@mixin font-bigger
+    font-size: 20px
+    @media only screen and (max-width: 1024px)
+        font-size: 2.25vw
+@mixin font-big
+    font-size: 16px
+    @media only screen and (max-width: 1024px)
+        font-size: 1.75vw
+@mixin font-normal
+    font-size: 14px
+    @media only screen and (max-width: 1024px)
+        font-size: 1.55vw
+@mixin font-small
+    font-size: 12px
+    @media only screen and (max-width: 1024px)
+        font-size: 1.3vw
 
 body
     padding: 0
@@ -9,7 +42,7 @@ body
     &.fix
         overflow: hidden
 
-.bam-paper-2025-wrap
+.bam-newspaper-2025-wrap
     width: 100%
     font-family: 'Noto Sans TC'
     text-size-adjust: none
@@ -31,7 +64,15 @@ body
         z-index: 1
         &::after
             display: none
-
+    .font-large
+        +font-large
+    .font-bigger
+        +font-bigger
+    .font-big
+        +font-big
+    .font-small
+        +font-small
+        
 @media only screen and (min-width: 1025px)
     .for-m
         display: none! important
