@@ -21,6 +21,11 @@ $(function() {
             el: '.newspaper-swiper .swiper-pagination',
             type: 'fraction',
         },
+        on: {
+            'slideChangeTransitionStart': function() {
+                $('body, html').animate({scrollTop: 0}, 500)
+            }
+        }
     });
 })
 

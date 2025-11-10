@@ -110,6 +110,7 @@ body {
 }
 .bam-newspaper-2025-wrap .newspaper-swiper .swiper-button-prev,
 .bam-newspaper-2025-wrap .newspaper-swiper .swiper-button-next {
+  position: fixed;
   width: 75px;
   margin: auto;
   left: 0;
