@@ -104,6 +104,12 @@ body {
     font-size: 1.55vw;
   }
 }
+.bam-newspaper-2025-wrap a {
+  display: block;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
 .bam-newspaper-2025-wrap .newspaper-swiper {
   max-width: 1024px;
   margin: auto;
@@ -193,13 +199,14 @@ body {
   border-top: 1px solid #717171;
   border-bottom: 1px solid #717171;
 }
-.bam-newspaper-2025-wrap .newspaper-swiper .div-flex > div {
+.bam-newspaper-2025-wrap .newspaper-swiper .div-flex > div, .bam-newspaper-2025-wrap .newspaper-swiper .div-flex > a {
   border-left: 1px solid #717171;
 }
-.bam-newspaper-2025-wrap .newspaper-swiper .div-flex > div:first-child {
+.bam-newspaper-2025-wrap .newspaper-swiper .div-flex > div:first-child, .bam-newspaper-2025-wrap .newspaper-swiper .div-flex > a:first-child {
   border: 0;
 }
 .bam-newspaper-2025-wrap .newspaper-swiper .div-flex .div-flex-1 {
+  display: block;
   position: relative;
   padding: 1em;
   flex: 1 0 0;
@@ -763,27 +770,27 @@ body {
   left: 17.5%;
   width: 38%;
 }
-.bam-newspaper-2025-wrap .newspaper-swiper .map-block {
+.bam-newspaper-2025-wrap .newspaper-swiper .slide-map .map-wrap {
+  position: relative;
+  background: rgba(106, 202, 235, 0.15);
+}
+.bam-newspaper-2025-wrap .newspaper-swiper .slide-map .map-wrap .p-source {
+  position: absolute;
+  left: 3%;
+  bottom: 7.5%;
+}
+.bam-newspaper-2025-wrap .newspaper-swiper .slide-map .map-wrap .p-page {
+  position: absolute;
+  right: 5%;
+  bottom: 2%;
+}
+.bam-newspaper-2025-wrap .newspaper-swiper .slide-map .map-block {
   position: relative;
   width: 100%;
   padding-top: 119.2263936291%;
   background-repeat: no-repeat !important;
   background-position: center center !important;
   background-size: cover !important;
-}
-.bam-newspaper-2025-wrap .newspaper-swiper .slide-map > div {
-  position: relative;
-  background: rgba(106, 202, 235, 0.15);
-}
-.bam-newspaper-2025-wrap .newspaper-swiper .slide-map > div .p-source {
-  position: absolute;
-  left: 3%;
-  bottom: 7.5%;
-}
-.bam-newspaper-2025-wrap .newspaper-swiper .slide-map > div .p-page {
-  position: absolute;
-  right: 5%;
-  bottom: 2%;
 }
 .bam-newspaper-2025-wrap .newspaper-swiper .p-1 {
   font-size: 16px;
@@ -810,6 +817,14 @@ body {
 }
 .bam-newspaper-2025-wrap .newspaper-swiper .slide-bottom img {
   width: 10em;
+}
+.bam-newspaper-2025-wrap .newspaper-swiper .href-1 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 53.5%;
+  height: 48%;
+  background: rgba(0, 0, 0, 0.5);
 }
 
 @media only screen and (max-width: 1024px) {

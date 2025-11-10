@@ -23,6 +23,11 @@ body
     font-weight: bold
     +font-normal
     text-align: justify
+    a
+        display: block
+        text-decoration: none
+        margin: 0
+        padding: 0
     .newspaper-swiper
         max-width: 1024px
         margin: auto
@@ -84,11 +89,12 @@ body
             align-items: stretch
             border-top: 1px solid $gray
             border-bottom: 1px solid $gray
-            > div
+            > div, > a
                 border-left: 1px solid $gray
                 &:first-child
                     border: 0
             .div-flex-1
+                display: block
                 position: relative
                 padding: 1em
                 flex: 1 0 0
@@ -476,16 +482,8 @@ body
                 width: 38%
 
 
-        .map-block
-            position: relative
-            width: 100%
-            padding-top: percentage(1048/879)
-            background-repeat: no-repeat! important
-            background-position: center center! important
-            background-size: cover! important
-
         .slide-map
-            > div
+            .map-wrap
                 position: relative
                 background: rgba($sky, 0.15)
                 .p-source
@@ -496,6 +494,14 @@ body
                     position: absolute
                     right: 5%
                     bottom: 2%
+            .map-block
+                position: relative
+                width: 100%
+                padding-top: percentage(1048/879)
+                background-repeat: no-repeat! important
+                background-position: center center! important
+                background-size: cover! important
+
         .p-1
             +font-big
             padding: 0.5em 1.5em 0.5em 2.15em
@@ -509,6 +515,14 @@ body
                 +font-small
             img
                 width: 10em
+
+        .href-1
+            position: absolute
+            top: 0
+            right: 0
+            width: 53.5%
+            height: 48%
+            background: rgba(#000,0.5)
 
 
 @media only screen and (max-width: 1024px)
