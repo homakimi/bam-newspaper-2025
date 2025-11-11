@@ -47,9 +47,10 @@ body
         .swiper
             width: 80%
             margin: auto
-            background: #FFF
         .swiper-slide
             padding: 3%
+            height: auto
+            background: #FFF
         h2
             +font-huge
             color: $blue
@@ -153,7 +154,7 @@ body
                 padding: 0.5em 1em
                 flex: 1 0 0
                 img
-                    width: 37.5%
+                    width: 36%
                 article
                     flex: 1 0 0
                     h4
@@ -223,7 +224,7 @@ body
                 // font-weight: bold
                 color: #FFF
                 background: $sky
-                padding: 0.25em 1em
+                padding: 0.15em 0.75em
         .promise-flex
             display: flex
             justify-content: center
@@ -530,6 +531,9 @@ body
 
 @media only screen and (max-width: 1024px)
     .bam-newspaper-2025-wrap
+        .newspaper-swiper
+            hr.thick
+                border-top-width: 2px
         .swiper-btn-block
             display: flex
             justify-content: center

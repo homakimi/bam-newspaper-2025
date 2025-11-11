@@ -135,10 +135,11 @@ body {
 .bam-newspaper-2025-wrap .newspaper-swiper .swiper {
   width: 80%;
   margin: auto;
-  background: #FFF;
 }
 .bam-newspaper-2025-wrap .newspaper-swiper .swiper-slide {
   padding: 3%;
+  height: auto;
+  background: #FFF;
 }
 .bam-newspaper-2025-wrap .newspaper-swiper h2 {
   font-size: 35.5px;
@@ -290,7 +291,7 @@ body {
 }
 .bam-newspaper-2025-wrap .newspaper-swiper .div-flex .div-flex-4 img,
 .bam-newspaper-2025-wrap .newspaper-swiper .div-flex .div-flex-5 img {
-  width: 37.5%;
+  width: 36%;
 }
 .bam-newspaper-2025-wrap .newspaper-swiper .div-flex .div-flex-4 article,
 .bam-newspaper-2025-wrap .newspaper-swiper .div-flex .div-flex-5 article {
@@ -392,7 +393,7 @@ body {
 .bam-newspaper-2025-wrap .newspaper-swiper .name-flex p {
   color: #FFF;
   background: #6acaeb;
-  padding: 0.25em 1em;
+  padding: 0.15em 0.75em;
 }
 .bam-newspaper-2025-wrap .newspaper-swiper .promise-flex {
   display: flex;
@@ -837,6 +838,9 @@ body {
 }
 
 @media only screen and (max-width: 1024px) {
+  .bam-newspaper-2025-wrap .newspaper-swiper hr.thick {
+    border-top-width: 2px;
+  }
   .bam-newspaper-2025-wrap .swiper-btn-block {
     display: flex;
     justify-content: center;
