@@ -135,10 +135,10 @@ body {
 .bam-newspaper-2025-wrap .newspaper-swiper .swiper {
   width: 80%;
   margin: auto;
+  background: #FFF;
 }
 .bam-newspaper-2025-wrap .newspaper-swiper .swiper-slide {
   padding: 3%;
-  background: #FFF;
 }
 .bam-newspaper-2025-wrap .newspaper-swiper h2 {
   font-size: 35.5px;
@@ -405,7 +405,7 @@ body {
 }
 .bam-newspaper-2025-wrap .newspaper-swiper .promise-flex article h3 {
   font-size: 14px;
-  padding: 1em;
+  padding: 0.5em 1em;
 }
 @media only screen and (max-width: 1024px) {
   .bam-newspaper-2025-wrap .newspaper-swiper .promise-flex article h3 {
@@ -425,16 +425,23 @@ body {
 }
 .bam-newspaper-2025-wrap .newspaper-swiper .promise-flex article > p {
   border-top: 1px solid #717171;
-  padding: 1em;
+  padding: 0.75em 1em;
+  font-size: 16px;
+}
+@media only screen and (max-width: 1024px) {
+  .bam-newspaper-2025-wrap .newspaper-swiper .promise-flex article > p {
+    font-size: 1.75vw;
+  }
 }
 .bam-newspaper-2025-wrap .newspaper-swiper .promise-flex img {
   display: block;
-  width: 32%;
+  width: 35%;
 }
 .bam-newspaper-2025-wrap .newspaper-swiper .circle-flex {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0.7em 0;
   gap: 8%;
 }
 .bam-newspaper-2025-wrap .newspaper-swiper .circle-flex > div {
@@ -600,10 +607,12 @@ body {
 .bam-newspaper-2025-wrap .newspaper-swiper .title-info-flex p {
   color: #3698ce;
   font-size: 64px;
+  margin-top: -0.1em;
 }
 @media only screen and (max-width: 1024px) {
   .bam-newspaper-2025-wrap .newspaper-swiper .title-info-flex p {
     font-size: 8vw;
+    line-height: 9.5vw;
   }
 }
 .bam-newspaper-2025-wrap .newspaper-swiper .title-info-flex article {
@@ -615,7 +624,7 @@ body {
   }
 }
 .bam-newspaper-2025-wrap .newspaper-swiper .info-wrap {
-  padding: 0 1.5%;
+  padding: 0 5%;
 }
 .bam-newspaper-2025-wrap .newspaper-swiper .info-wrap .info-block {
   display: flex;
@@ -647,18 +656,18 @@ body {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding: 1em 2em;
+  padding: 0.7em 2em;
   gap: 1em;
 }
 .bam-newspaper-2025-wrap .newspaper-swiper .info-wrap .info-block .info-flex img {
   display: block;
-  width: 8em;
+  width: 7em;
   flex-shrink: 0;
 }
 .bam-newspaper-2025-wrap .newspaper-swiper .info-wrap .info-block .info-flex h4 {
   font-size: 28px;
   color: #000;
-  margin-bottom: 0.25em;
+  margin-bottom: 0.1em;
 }
 @media only screen and (max-width: 1024px) {
   .bam-newspaper-2025-wrap .newspaper-swiper .info-wrap .info-block .info-flex h4 {
@@ -681,7 +690,7 @@ body {
   color: #fc7e81;
   text-align: center;
   font-size: 16px;
-  width: 20%;
+  width: 18%;
 }
 @media only screen and (max-width: 1024px) {
   .bam-newspaper-2025-wrap .newspaper-swiper .info-wrap .info-block article {
@@ -689,12 +698,12 @@ body {
   }
 }
 .bam-newspaper-2025-wrap .newspaper-swiper .info-wrap .info-block article h4 {
-  font-size: 45px;
+  font-size: 38px;
   line-height: 100%;
 }
 @media only screen and (max-width: 1024px) {
   .bam-newspaper-2025-wrap .newspaper-swiper .info-wrap .info-block article h4 {
-    font-size: 5vw;
+    font-size: 4.5vw;
   }
 }
 .bam-newspaper-2025-wrap .newspaper-swiper .comic-block {
@@ -816,6 +825,7 @@ body {
   }
 }
 .bam-newspaper-2025-wrap .newspaper-swiper .slide-bottom img {
+  display: block;
   width: 10em;
 }
 .bam-newspaper-2025-wrap .newspaper-swiper .href-1 {
@@ -824,7 +834,6 @@ body {
   right: 0;
   width: 53.5%;
   height: 48%;
-  background: rgba(0, 0, 0, 0.5);
 }
 
 @media only screen and (max-width: 1024px) {

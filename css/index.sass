@@ -47,9 +47,9 @@ body
         .swiper
             width: 80%
             margin: auto
+            background: #FFF
         .swiper-slide
             padding: 3%
-            background: #FFF
         h2
             +font-huge
             color: $blue
@@ -233,21 +233,23 @@ body
                 flex: 1 0 0
                 h3
                     +font-normal
-                    padding: 1em
+                    padding: 0.5em 1em
                     p
                         +font-bigger
                     span
                         color: $blue
                 > p
                     border-top: 1px solid $gray
-                    padding: 1em
+                    padding: 0.75em 1em
+                    +font-big
             img
                 display: block
-                width: 32%
+                width: 35%
         .circle-flex
             display: flex
             justify-content: center
             align-items: center
+            padding: 0.7em 0
             gap: 8%
             > div
                 display: flex
@@ -369,10 +371,11 @@ body
                 color: $blue
                 +font-mark
                 // font-weight: bold
+                margin-top: -0.1em
             article
                 +font-big
         .info-wrap
-            padding: 0 1.5%
+            padding: 0 5%
             .info-block
                 display: flex
                 justify-content: flex-start
@@ -398,16 +401,16 @@ body
                     display: flex
                     justify-content: flex-start
                     align-items: center
-                    padding: 1em 2em
+                    padding: 0.7em 2em
                     gap: 1em
                     img
                         display: block
-                        width: 8em
+                        width: 7em
                         flex-shrink: 0
                     h4
                         +font-large
                         color: $black
-                        margin-bottom: 0.25em
+                        margin-bottom: 0.1em
                     span
                         color: $blue
                         +font-big
@@ -418,7 +421,7 @@ body
                     color: $peach
                     text-align: center
                     +font-big
-                    width: 20%
+                    width: 18%
                     h4
                         +font-super
                         line-height: 100%
@@ -514,6 +517,7 @@ body
             p
                 +font-small
             img
+                display: block
                 width: 10em
 
         .href-1
@@ -522,7 +526,6 @@ body
             right: 0
             width: 53.5%
             height: 48%
-            background: rgba(#000,0.5)
 
 
 @media only screen and (max-width: 1024px)

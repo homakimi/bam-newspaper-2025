@@ -12,7 +12,6 @@ $(function() {
     new Swiper('.newspaper-swiper .swiper', {
         speed: 500,
         spaceBetween: 50,
-        autoHeight: true,
         navigation: {
             nextEl: '.newspaper-swiper .swiper-button-next',
             prevEl: '.newspaper-swiper .swiper-button-prev',
