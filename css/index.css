@@ -780,9 +780,12 @@ body {
   left: 17.5%;
   width: 38%;
 }
+.bam-newspaper-2025-wrap .newspaper-swiper .slide-map {
+  background: linear-gradient(to bottom, #FFF 50%, #e6faff 50%);
+}
 .bam-newspaper-2025-wrap .newspaper-swiper .slide-map .map-wrap {
   position: relative;
-  background: rgba(106, 202, 235, 0.15);
+  background: #e6faff;
 }
 .bam-newspaper-2025-wrap .newspaper-swiper .slide-map .map-wrap .p-source {
   position: absolute;
