@@ -839,6 +839,20 @@ body {
   width: 53.5%;
   height: 48%;
 }
+.bam-newspaper-2025-wrap .newspaper-swiper .href-page {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 9%;
+  height: 100%;
+}
+.bam-newspaper-2025-wrap .newspaper-swiper .href-last {
+  position: absolute;
+  top: 0;
+  right: 3%;
+  width: 9%;
+  height: 100%;
+}
 
 @media only screen and (max-width: 1024px) {
   .bam-newspaper-2025-wrap .newspaper-swiper hr.thick {
