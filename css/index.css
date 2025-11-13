@@ -98,6 +98,7 @@ body {
   font-weight: bold;
   font-size: 14px;
   text-align: justify;
+  padding: 3em 0;
 }
 @media only screen and (max-width: 1024px) {
   .bam-newspaper-2025-wrap {
